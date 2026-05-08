@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bkspy1x2pxdhl"]
 
 [ext_resource type="Script" uid="uid://cqwi12oro82b3" path="res://Non-Game Scenes/Buttons/button_base.gd" id="1_6ftbs"]
-[ext_resource type="LabelSettings" uid="uid://c4u7br5rcdvtq" path="res://Title.tres" id="1_wxob8"]
+[ext_resource type="LabelSettings" uid="uid://c4u7br5rcdvtq" path="res://Non-Game Scenes/Title.tres" id="1_wxob8"]
 [ext_resource type="Script" uid="uid://dqhxqv83roa8c" path="res://Non-Game Scenes/Buttons/quit.gd" id="2_o5lvd"]
 [ext_resource type="Texture2D" uid="uid://cgng2gthhn11x" path="res://Non-Game Scenes/Buttons/Start/Start_base.png" id="2_xdwky"]
 [ext_resource type="Texture2D" uid="uid://cxx4daon1j7hd" path="res://Non-Game Scenes/Buttons/Start/Start_Hover.png" id="3_hc64u"]

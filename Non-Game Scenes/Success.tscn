@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cwvlpg3h13shr"]
 
-[ext_resource type="LabelSettings" uid="uid://dn1lkibt7c8ow" path="res://Story_Title.tres" id="1_w5ily"]
-[ext_resource type="LabelSettings" uid="uid://fuo25k1j7rtg" path="res://Story_Text.tres" id="2_vhioj"]
+[ext_resource type="LabelSettings" uid="uid://dn1lkibt7c8ow" path="res://Non-Game Scenes/Story_Title.tres" id="1_w5ily"]
+[ext_resource type="LabelSettings" uid="uid://fuo25k1j7rtg" path="res://Non-Game Scenes/Story_Text.tres" id="2_vhioj"]
 [ext_resource type="Texture2D" uid="uid://cs87bn3d3o4bo" path="res://Non-Game Scenes/Buttons/Back/Back_Base.png" id="3_mw73i"]
 [ext_resource type="Texture2D" uid="uid://bmi6dh58ci0xn" path="res://Non-Game Scenes/Buttons/Back/Back_Hover.png" id="4_ydb2a"]
 [ext_resource type="Script" uid="uid://cqwi12oro82b3" path="res://Non-Game Scenes/Buttons/button_base.gd" id="5_qwldv"]

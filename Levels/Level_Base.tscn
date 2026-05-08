@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cafqpgkm3i5f"]
+
+[ext_resource type="TileSet" uid="uid://bb605op0tjocp" path="res://Levels/Environment.tres" id="1_e6y7n"]
+[ext_resource type="PackedScene" uid="uid://brdbq7r27u6u2" path="res://Player/Player.tscn" id="1_j2yby"]
+
+[node name="LevelBase" type="Node2D" unique_id=646927784]
+
+[node name="Background" type="TextureRect" parent="." unique_id=477595886]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Environment" type="TileMapLayer" parent="." unique_id=508296661]
+tile_set = ExtResource("1_e6y7n")
+
+[node name="Player" parent="." unique_id=87573410 instance=ExtResource("1_j2yby")]
