@@ -1,5 +1,13 @@
 [gd_scene format=3 uid="uid://cwvlpg3h13shr"]
 
+[ext_resource type="LabelSettings" uid="uid://dn1lkibt7c8ow" path="res://Story_Title.tres" id="1_w5ily"]
+[ext_resource type="LabelSettings" uid="uid://fuo25k1j7rtg" path="res://Story_Text.tres" id="2_vhioj"]
+[ext_resource type="Texture2D" uid="uid://cs87bn3d3o4bo" path="res://Non-Game Scenes/Buttons/Back/Back_Base.png" id="3_mw73i"]
+[ext_resource type="Texture2D" uid="uid://bmi6dh58ci0xn" path="res://Non-Game Scenes/Buttons/Back/Back_Hover.png" id="4_ydb2a"]
+[ext_resource type="Script" uid="uid://cqwi12oro82b3" path="res://Non-Game Scenes/Buttons/button_base.gd" id="5_qwldv"]
+[ext_resource type="Texture2D" uid="uid://bas580qf5jqwp" path="res://Non-Game Scenes/Buttons/Retry/Retry_Base.png" id="6_agjqp"]
+[ext_resource type="Texture2D" uid="uid://dqb168y7q3vts" path="res://Non-Game Scenes/Buttons/Retry/Retry_Hover.png" id="7_fexac"]
+
 [node name="Success" type="Control" unique_id=1805465599]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +15,75 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="." unique_id=1054146295]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="." unique_id=499426344]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -62.0
+offset_top = 47.0
+offset_right = 63.0
+offset_bottom = 70.0
+grow_horizontal = 2
+text = "Success"
+label_settings = ExtResource("1_w5ily")
+
+[node name="StoryText" type="Label" parent="." unique_id=1571823559]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -111.0
+offset_right = 20.0
+offset_bottom = -88.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Home Free Baby! You weren't half bad Housy!
+
+What do you say we look for some more loot 
+to grab?"
+label_settings = ExtResource("2_vhioj")
+
+[node name="Back" type="TextureButton" parent="." unique_id=71476852]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 203.0
+offset_top = 132.0
+offset_right = 331.0
+offset_bottom = 196.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_mw73i")
+texture_hover = ExtResource("4_ydb2a")
+script = ExtResource("5_qwldv")
+where_to = "res://Non-Game Scenes/Menu.tscn"
+
+[node name="Retry" type="TextureButton" parent="." unique_id=709852497]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -354.0
+offset_top = 129.0
+offset_right = -226.0
+offset_bottom = 193.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("6_agjqp")
+texture_hover = ExtResource("7_fexac")
+script = ExtResource("5_qwldv")

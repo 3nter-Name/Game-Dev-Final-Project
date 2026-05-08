@@ -1,5 +1,11 @@
 [gd_scene format=3 uid="uid://om1icu4xcpkq"]
 
+[ext_resource type="LabelSettings" uid="uid://dn1lkibt7c8ow" path="res://Story_Title.tres" id="1_cmpvg"]
+[ext_resource type="LabelSettings" uid="uid://fuo25k1j7rtg" path="res://Story_Text.tres" id="2_6bkcq"]
+[ext_resource type="Texture2D" uid="uid://cs87bn3d3o4bo" path="res://Non-Game Scenes/Buttons/Back/Back_Base.png" id="3_afuro"]
+[ext_resource type="Texture2D" uid="uid://bmi6dh58ci0xn" path="res://Non-Game Scenes/Buttons/Back/Back_Hover.png" id="4_dmps6"]
+[ext_resource type="Script" uid="uid://cqwi12oro82b3" path="res://Non-Game Scenes/Buttons/button_base.gd" id="5_2cf13"]
+
 [node name="Credits" type="Control" unique_id=323372216]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +13,58 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="." unique_id=1895805134]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="." unique_id=1287434053]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -62.0
+offset_top = 47.0
+offset_right = 63.0
+offset_bottom = 70.0
+grow_horizontal = 2
+text = "Credits"
+label_settings = ExtResource("1_cmpvg")
+
+[node name="StoryText" type="Label" parent="." unique_id=760958599]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -111.0
+offset_right = 20.0
+offset_bottom = -88.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Made by Jacob Brown
+
+Assets Credits:
+"
+label_settings = ExtResource("2_6bkcq")
+
+[node name="Back" type="TextureButton" parent="." unique_id=750818156]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -354.0
+offset_top = 129.0
+offset_right = -226.0
+offset_bottom = 193.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_afuro")
+texture_hover = ExtResource("4_dmps6")
+script = ExtResource("5_2cf13")
+where_to = "res://Non-Game Scenes/Menu.tscn"

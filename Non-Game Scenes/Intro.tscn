@@ -67,7 +67,6 @@ grow_vertical = 2
 texture_normal = ExtResource("3_x4iwp")
 texture_hover = ExtResource("4_0677o")
 script = ExtResource("5_30556")
-where_to = "res://Non-Game Scenes/Intro.tscn"
 
 [node name="Back" type="TextureButton" parent="." unique_id=1039296075]
 layout_mode = 1
@@ -85,4 +84,4 @@ grow_vertical = 2
 texture_normal = ExtResource("6_urjjl")
 texture_hover = ExtResource("7_14f6d")
 script = ExtResource("5_30556")
-where_to = "res://Non-Game Scenes/Credits.tscn"
+where_to = "res://Non-Game Scenes/Menu.tscn"
