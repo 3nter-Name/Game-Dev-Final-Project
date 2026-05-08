@@ -86,3 +86,4 @@ grow_vertical = 2
 texture_normal = ExtResource("6_5ujul")
 texture_hover = ExtResource("7_g1oi6")
 script = ExtResource("5_aly0a")
+where_to = "res://Levels/Main_Controller.tscn"
