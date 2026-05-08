@@ -1,7 +1,5 @@
 [gd_scene format=3 uid="uid://brdbq7r27u6u2"]
 
-[ext_resource type="Script" uid="uid://s22k1fwxxej0" path="res://Player/Timer.gd" id="1_3qydi"]
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_l2ndj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3qydi"]
@@ -13,14 +11,3 @@ sprite_frames = SubResource("SpriteFrames_l2ndj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1015302828]
 shape = SubResource("RectangleShape2D_3qydi")
-
-[node name="TimerDisplay" type="Label" parent="." unique_id=1023570158]
-offset_right = 40.0
-offset_bottom = 23.0
-script = ExtResource("1_3qydi")
-
-[node name="Timer" type="Timer" parent="TimerDisplay" unique_id=930294191]
-wait_time = 300.0
-autostart = true
-
-[connection signal="timeout" from="TimerDisplay/Timer" to="TimerDisplay" method="_on_timer_timeout"]
