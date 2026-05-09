@@ -31,3 +31,6 @@ func move_on() -> void:
 
 func success() -> void:
 	get_tree().change_scene_to_file("res://Non-Game Scenes/Success.tscn");
+
+func fail() -> void:
+	get_tree().change_scene_to_file("res://Non-Game Scenes/Fail.tscn");

@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cafqpgkm3i5f" path="res://Levels/Level_Base.tscn" id="1_n0qsc"]
 [ext_resource type="PackedScene" uid="uid://dm8lp31h4wk3j" path="res://NPC and Objects/MovableWall.tscn" id="2_dilhk"]
 [ext_resource type="PackedScene" uid="uid://bl81f32084u0b" path="res://NPC and Objects/Sewer_Cover.tscn" id="3_3mhv4"]
+[ext_resource type="PackedScene" uid="uid://m5urcxvb2xfi" path="res://Enemies/Greater_Guard.tscn" id="4_rf6l5"]
 
 [node name="Level_1" unique_id=646927784 instance=ExtResource("1_n0qsc")]
 
@@ -17,3 +18,11 @@ position = Vector2(970, 565)
 
 [node name="MovableWall" parent="." index="3" unique_id=1266019306 instance=ExtResource("2_dilhk")]
 position = Vector2(416, 480)
+
+[node name="GreaterGuard" parent="." index="4" unique_id=262409969 instance=ExtResource("4_rf6l5")]
+position = Vector2(260, 576)
+
+[node name="MarkerR" parent="GreaterGuard" index="2" unique_id=1301764200]
+position = Vector2(812, 0)
+
+[editable path="GreaterGuard"]

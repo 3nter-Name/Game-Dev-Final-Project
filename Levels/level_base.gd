@@ -16,5 +16,5 @@ func init(PLAYER : CharacterBody2D) -> void:
 func move_on() -> void:
 	get_parent().get_parent().move_on();
 
-func success() -> void:
-	get_parent().get_parent().success();
+func fail() -> void:
+	get_parent().get_parent().fail();

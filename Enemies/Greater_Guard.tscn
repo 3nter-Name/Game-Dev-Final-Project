@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://m5urcxvb2xfi"]
+
+[ext_resource type="PackedScene" uid="uid://cr4usin8rtx7m" path="res://Enemies/Guard.tscn" id="1_1t1tc"]
+[ext_resource type="Script" uid="uid://c0fes53lpdgbb" path="res://Enemies/greater_guard.gd" id="1_s5eli"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_s5eli"]
+
+[node name="GreaterGuard" type="Node2D" unique_id=262409969]
+script = ExtResource("1_s5eli")
+
+[node name="Guard" parent="." unique_id=1207583505 groups=["Self"] instance=ExtResource("1_1t1tc")]
+
+[node name="MarkerL" type="Area2D" parent="." unique_id=1503544441]
+position = Vector2(-199, 0)
+collision_layer = 4
+collision_mask = 4
+
+[node name="Collision" type="CollisionShape2D" parent="MarkerL" unique_id=1874471822]
+shape = SubResource("CircleShape2D_s5eli")
+
+[node name="MarkerR" type="Area2D" parent="." unique_id=1301764200]
+position = Vector2(220, 0)
+collision_layer = 4
+collision_mask = 4
+
+[node name="Collision" type="CollisionShape2D" parent="MarkerR" unique_id=1281775282]
+shape = SubResource("CircleShape2D_s5eli")
+
+[connection signal="body_entered" from="MarkerL" to="." method="_on_marker_l_body_entered"]
+[connection signal="body_entered" from="MarkerR" to="." method="_on_marker_r_body_entered"]

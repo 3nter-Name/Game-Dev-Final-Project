@@ -12,4 +12,4 @@ func _process(delta: float) -> void:
 
 
 func _on_timer_timeout() -> void:
-	get_parent().get_parent().get_tree().change_scene_to_file("res://Non-Game Scenes/Fail.tscn");
+	get_parent().fail();

@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cr4usin8rtx7m"]
 
+[ext_resource type="Script" uid="uid://b3rrn101hwind" path="res://Enemies/guard.gd" id="1_iw5v3"]
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_st5ds"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iw5v3"]
@@ -8,6 +10,9 @@
 size = Vector2(55, 20)
 
 [node name="Guard" type="CharacterBody2D" unique_id=1207583505]
+collision_layer = 4
+collision_mask = 6
+script = ExtResource("1_iw5v3")
 
 [node name="Collision" type="CollisionShape2D" parent="." unique_id=212040933]
 shape = SubResource("CapsuleShape2D_st5ds")
@@ -15,6 +20,21 @@ shape = SubResource("CapsuleShape2D_st5ds")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1729243367]
 sprite_frames = SubResource("SpriteFrames_iw5v3")
 
-[node name="Detection" type="CollisionShape2D" parent="." unique_id=387561353]
+[node name="DetectionL" type="Area2D" parent="." unique_id=2139747707]
+collision_layer = 4
+collision_mask = 2
+
+[node name="Collision" type="CollisionShape2D" parent="DetectionL" unique_id=1351281478]
+position = Vector2(-38, 0)
+shape = SubResource("RectangleShape2D_st5ds")
+
+[node name="DetectionR" type="Area2D" parent="." unique_id=244494186]
+collision_layer = 4
+collision_mask = 2
+
+[node name="Collision" type="CollisionShape2D" parent="DetectionR" unique_id=387561353]
 position = Vector2(38, 0)
 shape = SubResource("RectangleShape2D_st5ds")
+
+[connection signal="body_entered" from="DetectionL" to="." method="_on_detection_l_body_entered"]
+[connection signal="body_entered" from="DetectionR" to="." method="_on_detection_r_body_entered"]

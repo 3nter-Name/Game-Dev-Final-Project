@@ -11,7 +11,7 @@ script = ExtResource("1_ykbai")
 
 [node name="Current_Room" type="Node" parent="." unique_id=476325490]
 
-[node name="Player" parent="." unique_id=87573410 instance=ExtResource("1_884h6")]
+[node name="Player" parent="." unique_id=87573410 groups=["player"] instance=ExtResource("1_884h6")]
 
 [node name="TimerDisplay" type="Label" parent="." unique_id=246613257]
 offset_right = 40.0
