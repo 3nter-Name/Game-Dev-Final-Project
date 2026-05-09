@@ -2,13 +2,13 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://gn5gxcygtdhl"
-path="res://.godot/imported/chop rock.mp3-6c8547c936815073626f8054db61d4bd.mp3str"
+uid="uid://bjt26sne2uas0"
+path="res://.godot/imported/Chop Rock.mp3-278a01830616bcc2b4fdb4c8f366f6bc.mp3str"
 
 [deps]
 
-source_file="res://Non-Game Scenes/chop rock.mp3"
-dest_files=["res://.godot/imported/chop rock.mp3-6c8547c936815073626f8054db61d4bd.mp3str"]
+source_file="res://Non-Game Scenes/Chop Rock.mp3"
+dest_files=["res://.godot/imported/Chop Rock.mp3-278a01830616bcc2b4fdb4c8f366f6bc.mp3str"]
 
 [params]
 
