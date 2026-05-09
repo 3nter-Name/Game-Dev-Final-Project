@@ -48,7 +48,7 @@ grow_vertical = 2
 text = "Made by Jacob Brown
 
 Assets Credits:
-"
+Most Tiles and Character art: Pixel Frog on Itch.io"
 label_settings = ExtResource("2_6bkcq")
 
 [node name="Back" type="TextureButton" parent="." unique_id=750818156]
