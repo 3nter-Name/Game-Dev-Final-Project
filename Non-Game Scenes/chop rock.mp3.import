@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://gn5gxcygtdhl"
+path="res://.godot/imported/chop rock.mp3-6c8547c936815073626f8054db61d4bd.mp3str"
+
+[deps]
+
+source_file="res://Non-Game Scenes/chop rock.mp3"
+dest_files=["res://.godot/imported/chop rock.mp3-6c8547c936815073626f8054db61d4bd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://b3dhrreyfebmx" path="res://Levels/main_controller.gd" id="1_ykbai"]
 [ext_resource type="Script" uid="uid://s22k1fwxxej0" path="res://Levels/Timer.gd" id="2_53fre"]
 [ext_resource type="LabelSettings" uid="uid://fuo25k1j7rtg" path="res://Non-Game Scenes/Story_Text.tres" id="2_j802v"]
+[ext_resource type="AudioStream" uid="uid://gn5gxcygtdhl" path="res://Non-Game Scenes/chop rock.mp3" id="5_qfl5s"]
 
 [node name="MainController" type="Node" unique_id=1705005206]
 script = ExtResource("1_ykbai")
@@ -22,5 +23,11 @@ script = ExtResource("2_53fre")
 [node name="Timer" type="Timer" parent="TimerDisplay" unique_id=644182379]
 wait_time = 180.0
 autostart = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=68548613]
+position = Vector2(599, 297)
+stream = ExtResource("5_qfl5s")
+autoplay = true
+max_distance = 10000000.0
 
 [connection signal="timeout" from="TimerDisplay/Timer" to="TimerDisplay" method="_on_timer_timeout"]
