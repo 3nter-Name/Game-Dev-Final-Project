@@ -1,31 +1,84 @@
 [gd_scene format=3 uid="uid://cr4usin8rtx7m"]
 
 [ext_resource type="Script" uid="uid://b3rrn101hwind" path="res://Enemies/guard.gd" id="1_iw5v3"]
+[ext_resource type="Texture2D" uid="uid://dgbw3w2pddxrs" path="res://Enemies/Lancer_Run.png" id="2_ngn1c"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_st5ds"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_touu4"]
+atlas = ExtResource("2_ngn1c")
+region = Rect2(0, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqvv0"]
+atlas = ExtResource("2_ngn1c")
+region = Rect2(320, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdn5f"]
+atlas = ExtResource("2_ngn1c")
+region = Rect2(640, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pr5f4"]
+atlas = ExtResource("2_ngn1c")
+region = Rect2(960, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asftn"]
+atlas = ExtResource("2_ngn1c")
+region = Rect2(1280, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nblym"]
+atlas = ExtResource("2_ngn1c")
+region = Rect2(1600, 0, 320, 320)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iw5v3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_touu4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rqvv0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jdn5f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pr5f4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_asftn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nblym")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_st5ds"]
+radius = 20.0
+height = 78.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_st5ds"]
-size = Vector2(55, 20)
+size = Vector2(105.75, 56.5)
 
 [node name="Guard" type="CharacterBody2D" unique_id=1207583505]
 collision_layer = 4
 collision_mask = 6
 script = ExtResource("1_iw5v3")
 
-[node name="Collision" type="CollisionShape2D" parent="." unique_id=212040933]
-shape = SubResource("CapsuleShape2D_st5ds")
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1729243367]
 sprite_frames = SubResource("SpriteFrames_iw5v3")
+animation = &"Run"
+autoplay = "Run"
+
+[node name="Collision" type="CollisionShape2D" parent="." unique_id=212040933]
+shape = SubResource("CapsuleShape2D_st5ds")
 
 [node name="DetectionL" type="Area2D" parent="." unique_id=2139747707]
 collision_layer = 4
 collision_mask = 2
 
 [node name="Collision" type="CollisionShape2D" parent="DetectionL" unique_id=1351281478]
-position = Vector2(-38, 0)
+position = Vector2(-74.125, 0)
 shape = SubResource("RectangleShape2D_st5ds")
 
 [node name="DetectionR" type="Area2D" parent="." unique_id=244494186]
@@ -33,7 +86,7 @@ collision_layer = 4
 collision_mask = 2
 
 [node name="Collision" type="CollisionShape2D" parent="DetectionR" unique_id=387561353]
-position = Vector2(38, 0)
+position = Vector2(73, 0)
 shape = SubResource("RectangleShape2D_st5ds")
 
 [connection signal="body_entered" from="DetectionL" to="." method="_on_detection_l_body_entered"]

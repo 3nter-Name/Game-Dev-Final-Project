@@ -13,8 +13,10 @@ func _physics_process(delta):
 	var direction;
 	if target == "Left":
 		direction = -1;
+		$AnimatedSprite2D.flip_h = true;
 	else:
 		direction = 1;
+		$AnimatedSprite2D.flip_h = false;
 	
 	velocity.x = direction * SPEED;
 	
