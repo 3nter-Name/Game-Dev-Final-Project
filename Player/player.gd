@@ -8,6 +8,14 @@ const MIN_PUSH_FORCE = 10.0;
 func _physics_process(delta: float) -> void:
 	
 	velocity = Input.get_vector("Move_Left", "Move_Right", "Move_Up", "Move_Down") * SPEED;
+	
+	if velocity.x != 0:
+		$AnimatedSprite2D.play("Walk");
+		$AnimatedSprite2D.flip_h = velocity.x < 0;
+	else:
+		$AnimatedSprite2D.stop()
+		$AnimatedSprite2D.frame = 0;
+	
 	move_and_slide();
 	
 	for i in get_slide_collision_count():
