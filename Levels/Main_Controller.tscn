@@ -1,19 +1,24 @@
 [gd_scene format=3 uid="uid://68ash6m5uk0g"]
 
 [ext_resource type="PackedScene" uid="uid://brdbq7r27u6u2" path="res://Player/Player.tscn" id="1_884h6"]
+[ext_resource type="Script" uid="uid://b3dhrreyfebmx" path="res://Levels/main_controller.gd" id="1_ykbai"]
 [ext_resource type="Script" uid="uid://s22k1fwxxej0" path="res://Levels/Timer.gd" id="2_53fre"]
+[ext_resource type="LabelSettings" uid="uid://fuo25k1j7rtg" path="res://Non-Game Scenes/Story_Text.tres" id="2_j802v"]
 
 [node name="MainController" type="Node" unique_id=1705005206]
+script = ExtResource("1_ykbai")
 
 [node name="Player" parent="." unique_id=87573410 instance=ExtResource("1_884h6")]
 
 [node name="TimerDisplay" type="Label" parent="." unique_id=246613257]
 offset_right = 40.0
 offset_bottom = 23.0
+text = "Time Left: 000"
+label_settings = ExtResource("2_j802v")
 script = ExtResource("2_53fre")
 
 [node name="Timer" type="Timer" parent="TimerDisplay" unique_id=644182379]
-wait_time = 300.0
+wait_time = 180.0
 autostart = true
 
 [connection signal="timeout" from="TimerDisplay/Timer" to="TimerDisplay" method="_on_timer_timeout"]

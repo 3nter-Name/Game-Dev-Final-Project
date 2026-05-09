@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://cafqpgkm3i5f"]
 
+[ext_resource type="Script" uid="uid://ch46f70ig82hj" path="res://Levels/level_base.gd" id="1_c8gxq"]
 [ext_resource type="TileSet" uid="uid://bb605op0tjocp" path="res://Levels/Environment.tres" id="1_e6y7n"]
 
 [node name="LevelBase" type="Node2D" unique_id=646927784]
+script = ExtResource("1_c8gxq")
 
 [node name="Background" type="TextureRect" parent="." unique_id=477595886]
 offset_right = 40.0
@@ -10,3 +12,5 @@ offset_bottom = 40.0
 
 [node name="Environment" type="TileMapLayer" parent="." unique_id=508296661]
 tile_set = ExtResource("1_e6y7n")
+
+[node name="Spawn" type="Marker2D" parent="." unique_id=1792668541]

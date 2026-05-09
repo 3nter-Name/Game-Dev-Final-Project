@@ -1,4 +1,4 @@
-extends Label
+extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -8,8 +8,13 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	text = "Time Left: " + str(int($Timer.time_left));
+	pass
 
+func init(PLAYER : CharacterBody2D) -> void:
+	PLAYER.position = $Spawn.position;
 
-func _on_timer_timeout() -> void:
-	get_parent().get_parent().get_tree().change_scene_to_file("res://Non-Game Scenes/Fail.tscn");
+func move_on() -> void:
+	get_parent().move_on();
+
+func success() -> void:
+	get_parent().success();
