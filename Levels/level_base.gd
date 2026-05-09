@@ -14,7 +14,7 @@ func init(PLAYER : CharacterBody2D) -> void:
 	PLAYER.position = $Spawn.position;
 
 func move_on() -> void:
-	get_parent().move_on();
+	get_parent().get_parent().move_on();
 
 func success() -> void:
-	get_parent().success();
+	get_parent().get_parent().success();

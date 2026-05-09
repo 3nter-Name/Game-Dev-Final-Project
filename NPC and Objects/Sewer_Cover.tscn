@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bl81f32084u0b"]
+
+[ext_resource type="Texture2D" uid="uid://wm7v35dha82i" path="res://NPC and Objects/Sewer_Cover.png" id="1_2pgiq"]
+[ext_resource type="Script" uid="uid://bfllj6u5m2hq6" path="res://NPC and Objects/sewer_cover.gd" id="1_ir1i8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xaxpr"]
+radius = 34.058773
+
+[node name="SewerCover" type="Area2D" unique_id=104438445]
+script = ExtResource("1_ir1i8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=864370103]
+texture = ExtResource("1_2pgiq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1540829120]
+shape = SubResource("CircleShape2D_xaxpr")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

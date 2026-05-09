@@ -8,6 +8,8 @@
 [node name="MainController" type="Node" unique_id=1705005206]
 script = ExtResource("1_ykbai")
 
+[node name="Current_Room" type="Node" parent="." unique_id=476325490]
+
 [node name="Player" parent="." unique_id=87573410 instance=ExtResource("1_884h6")]
 
 [node name="TimerDisplay" type="Label" parent="." unique_id=246613257]

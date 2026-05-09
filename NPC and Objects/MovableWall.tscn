@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dm8lp31h4wk3j"]
+
+[ext_resource type="Texture2D" uid="uid://deuf34wlp45l4" path="res://NPC and Objects/Moveable_Block.png" id="1_32kkj"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_32kkj"]
+friction = 200.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tccbc"]
+size = Vector2(64, 64)
+
+[node name="MovableWall" type="RigidBody2D" unique_id=1266019306]
+scale = Vector2(0.999, 0.999)
+collision_mask = 7
+mass = 20.0
+physics_material_override = SubResource("PhysicsMaterial_32kkj")
+gravity_scale = 0.0
+linear_damp = 2.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=509495206]
+shape = SubResource("RectangleShape2D_tccbc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1152054961]
+texture = ExtResource("1_32kkj")
