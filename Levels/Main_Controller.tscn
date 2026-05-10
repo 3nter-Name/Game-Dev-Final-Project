@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://b3dhrreyfebmx" path="res://Levels/main_controller.gd" id="1_ykbai"]
 [ext_resource type="Script" uid="uid://s22k1fwxxej0" path="res://Levels/Timer.gd" id="2_53fre"]
 [ext_resource type="LabelSettings" uid="uid://fuo25k1j7rtg" path="res://Non-Game Scenes/Story_Text.tres" id="2_j802v"]
-[ext_resource type="AudioStream" uid="uid://bjt26sne2uas0" path="res://Non-Game Scenes/Chop Rock.mp3" id="5_qfl5s"]
+[ext_resource type="AudioStream" uid="uid://2xd4d58w3du" path="res://Levels/bail.mp3" id="5_qfl5s"]
 
 [node name="MainController" type="Node" unique_id=1705005206]
 script = ExtResource("1_ykbai")
