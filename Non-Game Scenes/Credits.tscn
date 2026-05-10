@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://cs87bn3d3o4bo" path="res://Non-Game Scenes/Buttons/Back/Back_Base.png" id="3_afuro"]
 [ext_resource type="Texture2D" uid="uid://bmi6dh58ci0xn" path="res://Non-Game Scenes/Buttons/Back/Back_Hover.png" id="4_dmps6"]
 [ext_resource type="Script" uid="uid://cqwi12oro82b3" path="res://Non-Game Scenes/Buttons/button_base.gd" id="5_2cf13"]
+[ext_resource type="AudioStream" uid="uid://dvv02js4bawga" path="res://Non-Game Scenes/bail (loop) 2.mp3" id="7_dmps6"]
+[ext_resource type="Script" uid="uid://b06qdxg48qefk" path="res://Levels/audio_stream_player_2d.gd" id="8_2cf13"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_afuro"]
 texture = ExtResource("1_6bkcq")
@@ -463,3 +465,10 @@ texture_normal = ExtResource("3_afuro")
 texture_hover = ExtResource("4_dmps6")
 script = ExtResource("5_2cf13")
 where_to = "res://Non-Game Scenes/Menu.tscn"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=145678220]
+position = Vector2(524, 268)
+stream = ExtResource("7_dmps6")
+autoplay = true
+max_distance = 999999.0
+script = ExtResource("8_2cf13")

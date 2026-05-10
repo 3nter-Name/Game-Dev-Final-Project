@@ -10,6 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://dra74uxxl8ny6" path="res://Non-Game Scenes/Buttons/Credits/Credits_Hover.png" id="6_blqst"]
 [ext_resource type="Texture2D" uid="uid://dn8bhcx8kn12f" path="res://Non-Game Scenes/Buttons/Quit/Quit_Base.png" id="7_2x4s6"]
 [ext_resource type="Texture2D" uid="uid://ciplhf083unft" path="res://Non-Game Scenes/Buttons/Quit/Quit_Hover.png" id="8_8351a"]
+[ext_resource type="AudioStream" uid="uid://dvv02js4bawga" path="res://Non-Game Scenes/bail (loop) 2.mp3" id="11_j1f4o"]
+[ext_resource type="Script" uid="uid://b06qdxg48qefk" path="res://Levels/audio_stream_player_2d.gd" id="12_blqst"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xdwky"]
 texture = ExtResource("1_xdwky")
@@ -482,3 +484,10 @@ grow_vertical = 2
 texture_normal = ExtResource("7_2x4s6")
 texture_hover = ExtResource("8_8351a")
 script = ExtResource("2_o5lvd")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1982347201]
+position = Vector2(524, 268)
+stream = ExtResource("11_j1f4o")
+autoplay = true
+max_distance = 999999.0
+script = ExtResource("12_blqst")

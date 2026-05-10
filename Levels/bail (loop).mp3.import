@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://nussyu8hy4o7"
+path="res://.godot/imported/bail (loop).mp3-cabcaf8b0881a45a6599065be8a0a8cd.mp3str"
+
+[deps]
+
+source_file="res://Levels/bail (loop).mp3"
+dest_files=["res://.godot/imported/bail (loop).mp3-cabcaf8b0881a45a6599065be8a0a8cd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

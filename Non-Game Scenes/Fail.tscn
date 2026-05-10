@@ -8,6 +8,8 @@
 [ext_resource type="Script" uid="uid://cqwi12oro82b3" path="res://Non-Game Scenes/Buttons/button_base.gd" id="5_aly0a"]
 [ext_resource type="Texture2D" uid="uid://bas580qf5jqwp" path="res://Non-Game Scenes/Buttons/Retry/Retry_Base.png" id="6_5ujul"]
 [ext_resource type="Texture2D" uid="uid://dqb168y7q3vts" path="res://Non-Game Scenes/Buttons/Retry/Retry_Hover.png" id="7_g1oi6"]
+[ext_resource type="AudioStream" uid="uid://dvv02js4bawga" path="res://Non-Game Scenes/bail (loop) 2.mp3" id="9_m5hri"]
+[ext_resource type="Script" uid="uid://b06qdxg48qefk" path="res://Levels/audio_stream_player_2d.gd" id="10_aly0a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fp6m8"]
 texture = ExtResource("1_r23vd")
@@ -481,3 +483,10 @@ texture_normal = ExtResource("6_5ujul")
 texture_hover = ExtResource("7_g1oi6")
 script = ExtResource("5_aly0a")
 where_to = "res://Levels/Main_Controller.tscn"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=2054798284]
+position = Vector2(524, 268)
+stream = ExtResource("9_m5hri")
+autoplay = true
+max_distance = 999999.0
+script = ExtResource("10_aly0a")

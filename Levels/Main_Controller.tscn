@@ -4,7 +4,8 @@
 [ext_resource type="Script" uid="uid://b3dhrreyfebmx" path="res://Levels/main_controller.gd" id="1_ykbai"]
 [ext_resource type="Script" uid="uid://s22k1fwxxej0" path="res://Levels/Timer.gd" id="2_53fre"]
 [ext_resource type="LabelSettings" uid="uid://fuo25k1j7rtg" path="res://Non-Game Scenes/Story_Text.tres" id="2_j802v"]
-[ext_resource type="AudioStream" uid="uid://2xd4d58w3du" path="res://Levels/bail.mp3" id="5_qfl5s"]
+[ext_resource type="AudioStream" uid="uid://nussyu8hy4o7" path="res://Levels/bail (loop).mp3" id="5_oc756"]
+[ext_resource type="Script" uid="uid://b06qdxg48qefk" path="res://Levels/audio_stream_player_2d.gd" id="6_oc756"]
 
 [node name="MainController" type="Node" unique_id=1705005206]
 script = ExtResource("1_ykbai")
@@ -28,8 +29,10 @@ autostart = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=68548613]
 position = Vector2(599, 297)
-stream = ExtResource("5_qfl5s")
+stream = ExtResource("5_oc756")
 autoplay = true
 max_distance = 10000000.0
+script = ExtResource("6_oc756")
 
 [connection signal="timeout" from="TimerDisplay/Timer" to="TimerDisplay" method="_on_timer_timeout"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="AudioStreamPlayer2D" method="_on_finished"]
