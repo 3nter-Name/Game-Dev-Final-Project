@@ -3,3 +3,5 @@
 [resource]
 font_size = 20
 font_color = Color(0.49411765, 0.21176471, 0.14901961, 1)
+outline_size = 3
+outline_color = Color(0, 0, 0, 1)

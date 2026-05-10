@@ -4,7 +4,7 @@ const SPEED = 150
 
 var playerFound = false;
 
-@onready var sprite = get_child(1);
+@onready var sprite = $AnimatedSprite2D;
 @onready var target = "Left";
 
 func _physics_process(delta):
@@ -25,13 +25,11 @@ func _physics_process(delta):
 
 func _on_detection_l_body_entered(body: Node2D) -> void:
 	if sprite.flip_h:
-		pass;
-	else:
 		if body.is_in_group("player"):
 			get_parent().get_parent().fail();
 
 
 func _on_detection_r_body_entered(body: Node2D) -> void:
-	if sprite.flip_h:
+	if !sprite.flip_h:
 		if body.is_in_group("player"):
 			get_parent().get_parent().fail();

@@ -14,8 +14,10 @@ script = ExtResource("1_ykbai")
 [node name="Player" parent="." unique_id=87573410 groups=["player"] instance=ExtResource("1_884h6")]
 
 [node name="TimerDisplay" type="Label" parent="." unique_id=246613257]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 70.0
+offset_top = 68.0
+offset_right = 206.0
+offset_bottom = 96.0
 text = "Time Left: 000"
 label_settings = ExtResource("2_j802v")
 script = ExtResource("2_53fre")
