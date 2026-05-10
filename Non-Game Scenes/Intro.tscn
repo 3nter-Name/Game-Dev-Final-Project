@@ -444,9 +444,10 @@ grow_vertical = 2
 text = "God my head hurts, the guards didn't need to be so rough
 I was only robbing that homeless guy.
 
-I need to get out of here. Last time I was in here I had about 
-3 minutes before alarms went off so I need to be quick"
+I need to get out of here. 
+Last time I was in here I only had 1 minute before alarms went off so I need to be quick"
 label_settings = ExtResource("2_q04c3")
+horizontal_alignment = 1
 
 [node name="Start" type="TextureButton" parent="." unique_id=1732613535]
 layout_mode = 1

@@ -23,7 +23,7 @@ func move_on() -> void:
 		var next_room = preload("res://Levels/level_2.tscn");
 		var room = next_room.instantiate();
 		$Current_Room.get_child(0).queue_free();
-		$Current_Room.add_child(room);
+		$Current_Room.call_deferred("add_child", room);
 		room.init($Player);
 		room_count += 1;
 	else:
