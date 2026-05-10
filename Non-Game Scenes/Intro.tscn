@@ -487,9 +487,11 @@ texture_hover = ExtResource("7_14f6d")
 script = ExtResource("5_30556")
 where_to = "res://Non-Game Scenes/Menu.tscn"
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1898149959]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=303329942]
 position = Vector2(524, 268)
 stream = ExtResource("9_0677o")
 autoplay = true
 max_distance = 999999.0
 script = ExtResource("10_30556")
+
+[connection signal="finished" from="AudioStreamPlayer2D" to="AudioStreamPlayer2D" method="_on_finished"]

@@ -484,9 +484,11 @@ texture_hover = ExtResource("7_g1oi6")
 script = ExtResource("5_aly0a")
 where_to = "res://Levels/Main_Controller.tscn"
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=2054798284]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1104116248]
 position = Vector2(524, 268)
 stream = ExtResource("9_m5hri")
 autoplay = true
 max_distance = 999999.0
 script = ExtResource("10_aly0a")
+
+[connection signal="finished" from="AudioStreamPlayer2D" to="AudioStreamPlayer2D" method="_on_finished"]
